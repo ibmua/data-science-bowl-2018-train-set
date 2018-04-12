@@ -9,53 +9,6 @@ print('U to undo')
 print('1234567890 change brush size')
 print('Press E to change view (hsv,rgb, per channel, etc)')
 
-		if		k == ord('e'):
-			should_display_bounds	=	not	should_display_bounds
-		elif	k == ord('r'):
-			color_list	=	[
-								'rgb'
-							,	'r'
-							,	'g'
-							,	'b'
-							,	'hsv'
-							,	'hue'
-							,	'saturation'
-							,	'value'
-							]
-			color_scheme	=	color_list.index( color_scheme ) + 1
-			color_scheme	%=	len(color_list)
-			color_scheme	=	color_list[ color_scheme ]
-			print( color_scheme )
-		elif	k == ord('1'):
-			draw_size	=	1
-		elif	k == ord('2'):
-			draw_size	=	2
-		elif	k == ord('3'):
-			draw_size	=	3
-		elif	k == ord('4'):
-			draw_size	=	4
-		elif	k == ord('5'):
-			draw_size	=	5
-		elif	k == ord('6'):
-			draw_size	=	6
-		elif	k == ord('7'):
-			draw_size	=	7
-		elif	k == ord('8'):
-			draw_size	=	8
-		elif	k == ord('9'):
-			draw_size	=	9
-		elif	k == ord('0'):
-			draw_size	=	10
-		elif	k == ord('u'):
-			undo()
-		elif	k == ord('q'):
-			are_we_expanding	=	True
-			toggle_expansion()
-		elif	k == ord('w'):
-			are_we_expanding	=	False
-			toggle_expansion()
-		elif	k == 27 or k == ord('='):
-
 
 import os
 import sys
